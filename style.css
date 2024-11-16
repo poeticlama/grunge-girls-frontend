@@ -3,6 +3,9 @@ body {
     font-family: sans-serif;
     font-size: 17px;
     background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .nav {
     background-color: black;
@@ -31,22 +34,22 @@ body {
     width: 30%;
 }
 
-.pre-save-btn {
+.btn {
     text-align: center;
 }
 
-.pre-save-btn button {
+.btn button {
     border-radius: 40px;
-    padding: 16px;
+    padding: 16px 50px;
     border: none;
     height: 54px;
-    width: 248px;
+    width: auto;
     background-color: #901ec3;
     color: black;
     transition: 700ms;
 }
 
-.pre-save-btn button:hover {
+.btn button:hover {
     elevation: above;
     color: black;
     background-color: #e3e336;
@@ -60,7 +63,7 @@ body {
     margin-top: 70px;
 }
 
-.news-head {
+.head {
     font-family: "Geist Mono", monospace;
     text-align: center;
     font-size: 40px;
@@ -72,6 +75,7 @@ body {
 .news {
     display: flex;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .news .post {
@@ -82,7 +86,7 @@ body {
     height: 300px;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     transition: 700ms;
 }
@@ -95,9 +99,65 @@ body {
 .news .post img {
     height: 80%;
     width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
 }
 
 .description {
     font-family: "Geist Mono", monospace;
     padding: 15px;
+}
+
+.tours {
+    margin-top: 50px;
+    border-bottom: 2px solid #655b68;
+    margin-bottom: 50px;
+}
+
+.nearest-show {
+    width: 100%;
+    border-color: #655b68;
+    border-top-style: solid;
+    border-top-width: 2px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    transition: 300ms;
+}
+
+.nearest-show:hover {
+    filter: brightness(1.2);
+}
+
+.date {
+    text-align: left;
+    width: 38%;
+    font-size: 20px;
+    padding-left: 20px;
+    color: white;
+    font-family: "Geist Mono", monospace;
+}
+
+.city {
+    text-align: left;
+    font-size: 20px;
+    width: 32%;
+    color: white;
+    font-family: "Geist Mono", monospace;
+}
+
+.show-btns {
+    justify-content: right;
+    display: flex;
+    width: 30%;
+    padding-right: 20px;
+}
+
+.show-btns .btn {
+    margin-left: 10px;
+}
+
+.place {
+    color: #e3e336;
 }
