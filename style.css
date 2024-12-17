@@ -162,3 +162,35 @@ body {
 .place {
     color: #e3e336;
 }
+
+.footer {
+    justify-self: center;
+    text-align: center;
+    border-top: #901ec3;
+    border-top-style: dotted;
+    border-top-width: 15px;
+    margin-top: 200px;
+    width: 40%;
+    padding-bottom: 20px;
+    font-size: 55px;
+    padding-top: 50px;
+    color: #901ec3;
+
+    font-family: "Doto";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.social {
+    justify-self: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.cite {
+    justify-self: center;
+    color: #901ec3;
+    padding-bottom: 30px;
+    font-family: "Geist Mono", monospace;
+}
