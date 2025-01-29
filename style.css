@@ -23,7 +23,6 @@ body {
 }
 
 .nav a:hover {
-    elevation: above;
     color: #901ec3;
 }
 
@@ -51,7 +50,6 @@ body {
 }
 
 .btn button:hover {
-    elevation: above;
     color: black;
     background-color: #e3e336;
 }
