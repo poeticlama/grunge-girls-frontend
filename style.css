@@ -8,6 +8,32 @@ body {
     background-size: cover;
     overflow: auto;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    border-radius: 40px;
+    padding: 16px 50px;
+    border: none;
+    height: 54px;
+    width: auto;
+    background-color: #901ec3;
+    color: black;
+    transition: 700ms;
+    font-family: sans-serif;
+}
+
+.btn button:hover {
+    color: black;
+    background-color: #e3e336;
+}
+
 .nav {
     background-color: black;
     text-align: center;
@@ -31,27 +57,7 @@ body {
 }
 
 .logo img {
-    width: 30%;
-}
-
-.btn {
-    text-align: center;
-}
-
-.btn button {
-    border-radius: 40px;
-    padding: 16px 50px;
-    border: none;
-    height: 54px;
-    width: auto;
-    background-color: #901ec3;
-    color: black;
-    transition: 700ms;
-}
-
-.btn button:hover {
-    color: black;
-    background-color: #e3e336;
+    width: 30%; 
 }
 
 .get-news {
@@ -72,35 +78,41 @@ body {
 }
 
 .news {
-    display: flex;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.news .post {
+.news ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.post {
     text-align: left;
     background-color: #901ec3;
     color: black;
-    width: 22%;
     height: 300px;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    width: 300px;
     border-radius: 10px;
     border: none;
     transition: 700ms;
 }
 
-.news .post:hover {
+.post:hover {
     color: black;
     background-color: #e3e336;
 }
 
-.news .post img {
+.post img {
+    object-position: center;
+    object-fit:inherit;
     height: 80%;
     width: 100%;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-
+    background-size: cover;
 }
 
 .description {
